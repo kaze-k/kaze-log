@@ -47,14 +47,14 @@
 
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
     <lastmod>2023-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -63,14 +63,14 @@
 
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/categories/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2023-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/categories/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2023-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
