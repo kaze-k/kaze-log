@@ -424,10 +424,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const activePosition = item.getBoundingClientRect().top
         const sidebarScrollTop = $cardToc.scrollTop
         if (activePosition > (document.documentElement.clientHeight - 100)) {
-          $cardToc.scrollTop = sidebarScrollTop + 150
+          $cardToc.scrollTop = sidebarScrollTop + 200
         }
-        if (activePosition < 100) {
-          $cardToc.scrollTop = sidebarScrollTop - 150
+        if (activePosition < 300) {
+          $cardToc.scrollTop = sidebarScrollTop - 200
         }
       }
     }
