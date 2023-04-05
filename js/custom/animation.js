@@ -1,1 +1,44 @@
-const nav_gparents="#nav",nav_animation="faa-tada",nav_hover=!0,nav_speed="",nav_icons=new Array(".fa-archive",".fa-tags",".fa-folder-open",".fa-bilibili","fa-tv"),social_gparents=".card-info-social-icons",social_animation="faa-shake",social_hover=!0,social_speed="faa-fast",social_icons=new Array(".fa-github",".fa-git",".fa-envelope",".fa-rss"),add_animation=(a,n,e,i,s)=>{var o=document.querySelector(""+a);for(let a=0;a<i.length;a++){var t=o.querySelector(""+i[a]);e?(t.classList.add(""+n,"animated-hover"),t.parentElement.classList.add("faa-parent","animated-hover")):t.classList.add(""+n,"animated",""+s),s&&t.classList.add(""+s)}};document.addEventListener("DOMContentLoaded",()=>{add_animation(nav_gparents,nav_animation,nav_hover,nav_icons,nav_speed),add_animation(social_gparents,social_animation,social_hover,social_icons,social_speed)});
+// see https://github.com/l-lin/font-awesome-animation
+/*
+gparents: 唯一的祖先节点名
+animation: 动画
+hover: 是否hover才出现动效
+icons: 图标 see https://fontawesome.com/
+speed: 速率 （可选) faa-fast faa-slow
+*/
+
+const nav_gparents = '#nav';
+const nav_animation = 'faa-tada';
+const nav_hover = true;
+const nav_speed = '';
+const nav_icons = new Array('.fa-archive', '.fa-tags', '.fa-folder-open', '.fa-bilibili', '.fa-tv');
+
+const social_gparents = '.card-info-social-icons';
+const social_animation = 'faa-shake';
+const social_hover = true;
+const social_speed = 'faa-fast';
+const social_icons = new Array('.fa-github', '.fa-git', '.fa-envelope', '.fa-rss');
+
+const add_animation = (gparents, animation, hover, icons, speed) => {
+  let index = document.querySelector(`${gparents}`);
+  for (let i = 0; i < icons.length; i++) {
+    let icon = index.querySelector(`${icons[i]}`);
+    // hover
+    if (hover) {
+      icon.classList.add(`${animation}`, 'animated-hover');
+      icon.parentElement.classList.add('faa-parent', 'animated-hover');
+    } else {
+      icon.classList.add(`${animation}`, 'animated', `${speed}`);
+    }
+
+    // speed
+    if (speed) {
+      icon.classList.add(`${speed}`);
+    }
+  }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  add_animation(nav_gparents, nav_animation, nav_hover, nav_icons, nav_speed);
+  add_animation(social_gparents, social_animation, social_hover, social_icons, social_speed);
+});
