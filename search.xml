@@ -4,11 +4,40 @@
   
     
     <entry>
+      <title>bluetooth在archlinux上的使用</title>
+      <link href="/kaze-log/posts/33511/"/>
+      <url>/kaze-log/posts/33511/</url>
+      
+        <content type="html"><![CDATA[<h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><ol><li><p>下载拥有bluetoothctl的程序软件，在archlinux上可以下载bluetooth-utils</p></li><li><p>启动蓝牙服务</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl enable bluetooth #开机自启</span><br><span class="line">systemctl start bluetooth #开启服务</span><br></pre></td></tr></table></figure></li><li><p>将用户加入lp组</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -a -G lp $USER</span><br></pre></td></tr></table></figure></li></ol><h1 id="bluetoothctl"><a href="#bluetoothctl" class="headerlink" title="bluetoothctl"></a>bluetoothctl</h1><ol><li><p>在终端输入bluetoothctl进入bluetoothctl的模式里</p></li><li><p>power on (打开控制电源)</p></li><li><p>agent on(打开代理)</p></li><li><p>default-agent(打开默认代理) &#x2F;&#x2F;可以进行自动连接已配对过的设备</p></li><li><p>scan on(打开扫描)</p></li><li><p>pair $设备Mac号 (进行配对)</p></li><li><p>connect $设备Mac号 (手动连接)</p></li><li><p>scan off(关闭扫描)</p></li><li><p>exit(退出bluetooth模式)</p></li></ol><h1 id="设置自动启动蓝牙"><a href="#设置自动启动蓝牙" class="headerlink" title="设置自动启动蓝牙"></a>设置自动启动蓝牙</h1><p>将 <code>/etc/bluetooth/main.conf</code>最后的<code>AutoEnable</code> 值修改为<code>true</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 系统 </category>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> Arch Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>archlinux和windows双系统挂载</title>
       <link href="/kaze-log/posts/50888/"/>
       <url>/kaze-log/posts/50888/</url>
       
-        <content type="html"><![CDATA[<ol><li>在完成安装系统到安装grub包后进行挂载windows分区</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">mkdir</span>  /mnt/windows10</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">mount /dev/磁盘中windows系统分区 /mnt/windows10</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">grub-mkconfig -o /boot/grub/grub.cfg</span></span><br></pre></td></tr></table></figure><ol start="2"><li><p>删除archlinux分区：直接到windows的磁盘工具中删除archlinux的分区</p></li><li><p>删除archlinux的efi分区：</p></li></ol><p>打开windows Power Shell</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">C:\windows\system32&gt; diskpart   //进入磁盘模式</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">DISKPART&gt; </span><span class="language-bash">list volume   //查看磁盘上的卷</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">DISKPART&gt; </span><span class="language-bash">select vol 2  //选择efi的分卷</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">DISKPART&gt; </span><span class="language-bash">assign letter=x   //给efi分卷一个盘符号，此时已经可以在资源管理器上看见efi的盘，但是无法打开</span></span><br></pre></td></tr></table></figure><ol start="4"><li><p>调出任务管理器，选中文件&gt;运行新文件&gt;选中efi盘&gt;删除GRUB&gt;进入EFI&gt;删除GRUB</p></li><li><p>回到windows Power Shell</p></li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">DISKPART&gt; </span><span class="language-bash">remove letter=x   //移除efi盘符</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">DISKPART&gt; </span><span class="language-bash"><span class="built_in">exit</span>  //退出</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h1><ol><li>在完成安装系统和安装grub包后进行挂载windows分区并进入windows系统</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">mkdir</span>  /mnt/windows10</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">mount /dev/磁盘中windows系统分区 /mnt/windows10</span></span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">grub-mkconfig -o /boot/grub/grub.cfg</span></span><br></pre></td></tr></table></figure><ol start="2"><li><p>删除archlinux预留分区：直接到windows的磁盘工具中删除archlinux的分区</p></li><li><p>删除archlinux的efi分区(选择windows引导的话)：</p></li></ol><p>打开windows Power Shell</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">C:\windows\system32&gt; diskpart   //进入磁盘模式</span><br><span class="line"></span><br><span class="line">DISKPART&gt; list volume   //查看磁盘上的卷</span><br><span class="line"></span><br><span class="line">DISKPART&gt; <span class="built_in">select</span> vol <span class="number">2</span>  //选择efi的分卷</span><br><span class="line"></span><br><span class="line">DISKPART&gt; assign letter=x   //给efi分卷一个盘符号，此时已经可以在资源管理器上看见efi的盘，但是无法打开</span><br></pre></td></tr></table></figure><ol start="4"><li><p>调出任务管理器，选中文件&gt;运行新文件&gt;选中efi盘&gt;删除GRUB&gt;进入EFI&gt;删除GRUB</p></li><li><p>回到windows Power Shell</p></li></ol><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DISKPART&gt; remove letter=x   //移除efi盘符</span><br><span class="line"></span><br><span class="line">DISKPART&gt; <span class="keyword">exit</span>  //退出</span><br></pre></td></tr></table></figure><h1 id="linux和windows时间统一"><a href="#linux和windows时间统一" class="headerlink" title="linux和windows时间统一"></a>linux和windows时间统一</h1><p>linux使用的是UTC时间，而windows不是用UTC时间，所以要禁用掉。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -22,9 +51,11 @@
             
             <tag> Linux </tag>
             
-            <tag> windows </tag>
-            
             <tag> 双系统 </tag>
+            
+            <tag> Arch Linux </tag>
+            
+            <tag> Windows </tag>
             
         </tags>
       
@@ -125,6 +156,8 @@
         <tags>
             
             <tag> Linux </tag>
+            
+            <tag> Arch Linux </tag>
             
         </tags>
       
