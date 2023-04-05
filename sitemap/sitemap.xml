@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/posts/0/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/posts/21725/</loc>
     
     <lastmod>2023-04-05</lastmod>
     
@@ -144,6 +144,13 @@
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaze-k.github.io/kaze-log/tags/javascript/</loc>
     <lastmod>2023-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
