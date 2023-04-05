@@ -15,8 +15,40 @@
     <atom:link href="https://kaze-k.github.io/kaze-log/feed/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>kaze-log，kaze的博客，记录X_X稀奇古怪的网络日志（weblog? blog? klog!），或许是一个🎁宝藏网站( •̀ ω •́ )。</description>
-    <pubDate>Wed, 05 Apr 2023 13:46:56 GMT</pubDate>
+    <pubDate>Wed, 05 Apr 2023 14:09:17 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Eslint的简单配置</title>
+      <link>https://kaze-k.github.io/kaze-log/posts/19711/</link>
+      <guid>https://kaze-k.github.io/kaze-log/posts/19711/</guid>
+      <pubDate>Wed, 05 Apr 2023 14:04:37 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;ESLint的官方链接&quot;&gt;&lt;a href=&quot;#ESLint的官方链接&quot; class=&quot;headerlink&quot; title=&quot;ESLint的官方链接&quot;&gt;&lt;/a&gt;ESLint的官方链接&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="ESLint的官方链接"><a href="#ESLint的官方链接" class="headerlink" title="ESLint的官方链接"></a>ESLint的官方链接</h1><ul><li><a href="https://github.com/eslint/eslint">github</a></li><li><a href="https://zh-hans.eslint.org/">官网</a></li></ul><h1 id="ESLint配置示例"><a href="#ESLint配置示例" class="headerlink" title="ESLint配置示例"></a>ESLint配置示例</h1><p>项目根目录的<code>.eslintrc.cjs/.eslintrc.js</code>文件的配置示例，更多选项可在<a href="https://zh-hans.eslint.org/">官网</a>或<a href="https://github.com/eslint/eslint">github</a>上查看</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">module</span>.<span class="property">exports</span> = &#123;</span><br><span class="line">  <span class="comment">// 根目录标识</span></span><br><span class="line">  <span class="attr">root</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="comment">// 环境变量</span></span><br><span class="line">  <span class="attr">env</span>: &#123;</span><br><span class="line">    <span class="attr">browser</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">es2021</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">node</span>: <span class="literal">true</span>,</span><br><span class="line">    <span class="attr">commonjs</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// 忽略文件</span></span><br><span class="line">  <span class="attr">ignorePatterns</span>: [<span class="string">&#x27;**/public/**/*.js&#x27;</span>],</span><br><span class="line">  <span class="comment">// 解析器选项</span></span><br><span class="line">  <span class="attr">parserOptions</span>: &#123;</span><br><span class="line">    <span class="attr">sourceType</span>: <span class="string">&#x27;module&#x27;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="comment">// 插件</span></span><br><span class="line">  <span class="attr">plugins</span>: [],</span><br><span class="line">  <span class="comment">// 配置继承</span></span><br><span class="line">  <span class="attr">extends</span>: [<span class="string">&#x27;eslint:recommended&#x27;</span>, <span class="string">&#x27;prettier&#x27;</span>],</span><br><span class="line">  <span class="comment">// 规则定义</span></span><br><span class="line">  <span class="attr">rules</span>: &#123;</span><br><span class="line">    <span class="string">&#x27;no-undef&#x27;</span>: <span class="string">&#x27;off&#x27;</span>, <span class="comment">// 未声明变量</span></span><br><span class="line">    <span class="string">&#x27;no-unused-vars&#x27;</span>: <span class="string">&#x27;off&#x27;</span>, <span class="comment">// 未使用过的变量</span></span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      
+      <category domain="https://kaze-k.github.io/kaze-log/categories/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      
+      <category domain="https://kaze-k.github.io/kaze-log/tags/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/">项目管理</category>
+      
+      <category domain="https://kaze-k.github.io/kaze-log/tags/Javascript/">Javascript</category>
+      
+      
+      <comments>https://kaze-k.github.io/kaze-log/posts/19711/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>bluetooth在archlinux上的使用</title>
