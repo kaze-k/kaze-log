@@ -101,14 +101,14 @@
 
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/Javascript/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2023-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/Javascript/</loc>
     <lastmod>2023-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -122,7 +122,7 @@
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
     <lastmod>2023-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -143,20 +143,27 @@
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2023-04-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kaze-k.github.io/kaze-log/tags/javascript/</loc>
     <lastmod>2023-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://kaze-k.github.io/kaze-log/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
+    <lastmod>2023-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://kaze-k.github.io/kaze-log/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</loc>
+    <lastmod>2023-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/</loc>
@@ -167,13 +174,6 @@
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/categories/%E5%AD%A6%E4%B9%A0/</loc>
-    <lastmod>2023-04-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaze-k.github.io/kaze-log/categories/%E9%A1%B9%E7%9B%AE%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2023-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
