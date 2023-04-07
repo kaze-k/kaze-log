@@ -13,16 +13,14 @@
       
       <categories>
           
-          <category> 项目管理 </category>
+          <category> 工具 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
-            
-            <tag> Javascript </tag>
+            <tag> JavaScript </tag>
             
         </tags>
       
@@ -40,16 +38,14 @@
       
       <categories>
           
-          <category> 项目管理 </category>
+          <category> 工具 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 工具 </tag>
-            
-            <tag> Javascript </tag>
+            <tag> JavaScript </tag>
             
         </tags>
       
@@ -74,11 +70,9 @@
       
         <tags>
             
-            <tag> 工具 </tag>
+            <tag> Arch Linux </tag>
             
             <tag> Linux </tag>
-            
-            <tag> Arch Linux </tag>
             
         </tags>
       
@@ -103,9 +97,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Arch Linux </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -127,7 +121,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
@@ -152,7 +146,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
@@ -177,7 +171,7 @@
       
       <categories>
           
-          <category> 学习 </category>
+          <category> 学习笔记 </category>
           
       </categories>
       
@@ -209,9 +203,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Arch Linux </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -223,9 +217,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/kaze-log/categories/index.html"/>
-      <url>/kaze-log/categories/index.html</url>
+      <title>标签</title>
+      <link href="/kaze-log/tags/index.html"/>
+      <url>/kaze-log/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -234,9 +228,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/kaze-log/tags/index.html"/>
-      <url>/kaze-log/tags/index.html</url>
+      <title>分类</title>
+      <link href="/kaze-log/categories/index.html"/>
+      <url>/kaze-log/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
