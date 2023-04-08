@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/posts/21725/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/posts/33511/</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/posts/33511/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/posts/21725/</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -94,50 +94,50 @@
 
   <url>
     <loc>https://kaze-k.github.io/kaze-log</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/JavaScript/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <loc>https://kaze-k.github.io/kaze-log/tags/Arch-Linux/</loc>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/Arch-Linux/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/tags/Windows/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaze-k.github.io/kaze-log/tags/JavaScript/</loc>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -145,22 +145,22 @@
 
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/categories/%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2023-04-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2023-04-07</lastmod>
+    <lastmod>2023-04-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kaze-k.github.io/kaze-log/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <lastmod>2023-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
