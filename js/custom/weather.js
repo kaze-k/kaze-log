@@ -1,1 +1,26 @@
-WIDGET={CONFIG:{modules:"01234",background:"5",tmpColor:"eee",tmpSize:"16",cityColor:"eee",citySize:"16",aqiColor:"eee",aqiSize:"16",weatherIconSize:"24",alertIconSize:"18",padding:"3px 10px 3px 10px",shadow:"1",language:"auto",borderRadius:"20",fixed:"false",vertical:"center",horizontal:"center",city:"CN101281104",key:"8a6f024949984188bab47a6c2ee56f47"}};
+WIDGET = {
+  CONFIG: {
+    modules: '01234',
+    background: '5',
+    tmpColor: 'eee',
+    tmpSize: '16',
+    cityColor: 'eee',
+    citySize: '16',
+    aqiColor: 'eee',
+    aqiSize: '16',
+    weatherIconSize: '24',
+    alertIconSize: '18',
+    padding: '3px 10px 3px 10px',
+    shadow: '1',
+    language: 'auto',
+    borderRadius: '20',
+    fixed: 'false',
+    // fixed: 'true',
+    // top: '10',
+    // right: '10',
+    vertical: 'center',
+    horizontal: 'center',
+    city: 'CN101281104',
+    key: '8a6f024949984188bab47a6c2ee56f47',
+  },
+};

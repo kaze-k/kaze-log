@@ -1,1 +1,26 @@
-let OriginTitle=document.title,titleTime;document.addEventListener("visibilitychange",()=>{if(document.hidden){var t=document.querySelectorAll("link");for(let e=0;e<t.length;e++)"shortcut icon"===t[e].rel&&t[e].setAttribute("href","/kaze-log/img/error.png"),document.title="页面失踪了 X_X",clearTimeout(titleTime)}else{var i=document.querySelectorAll("link");for(let e=0;e<i.length;e++)"shortcut icon"===i[e].rel&&i[e].setAttribute("href","/kaze-log/img/favicon.png");document.title=">‿ㅇ",titleTime=setTimeout(function(){document.title=OriginTitle},1e3)}});
+let OriginTitle = document.title;
+let titleTime;
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    let links = document.querySelectorAll('link');
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].rel === 'shortcut icon') {
+        links[i].setAttribute('href', '/kaze-log/img/error.png');
+      }
+      document.title = '页面失踪了 X_X';
+      clearTimeout(titleTime);
+    }
+  } else {
+    let links = document.querySelectorAll('link');
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].rel === 'shortcut icon') {
+        links[i].setAttribute('href', '/kaze-log/img/favicon.png');
+      }
+    }
+    document.title = '>‿ㅇ';
+    titleTime = setTimeout(function () {
+      document.title = OriginTitle;
+    }, 1000);
+  }
+});
