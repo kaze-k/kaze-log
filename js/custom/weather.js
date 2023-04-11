@@ -20,7 +20,7 @@ WIDGET = {
     // right: '10',
     vertical: 'center',
     horizontal: 'center',
-    city: 'CN101281104',
+    // city: 'CN101281104',
     key: '8a6f024949984188bab47a6c2ee56f47',
   },
 };
