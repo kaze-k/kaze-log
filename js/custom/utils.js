@@ -1,18 +1,10 @@
-var go_down = document.querySelector('#go-down')
+document.addEventListener('scroll', function () {
+  var go_down = document.querySelector('#go-down')
+  var isbottom = Math.abs(document.documentElement.scrollHeight - window.pageYOffset - document.documentElement.clientHeight) <= 1
 
-document.addEventListener('DOMContentLoaded', function () {
-  const scrollTask = () => {
-    var isbottom = window.pageYOffset + document.documentElement.clientHeight === document.documentElement.scrollHeight
-    console.log('sh', document.documentElement.scrollHeight)
-    console.log('ch', document.documentElement.clientHeight)
-    console.log('p', window.pageYOffset)
-
-    if (isbottom) {
-      go_down.style.display = "none"
-    } else {
-      go_down.style.display = "block"
-    }
+  if (isbottom) {
+    go_down.style.display = "none"
+  } else {
+    go_down.style.display = "block"
   }
-  window.scrollCollect = scrollTask;
-  window.addEventListener('scroll', scrollCollect)
 })
