@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const hide_down = () => {
     var go_down = document.querySelector('#go-down')
-    var isbottom = Math.abs(document.documentElement.scrollHeight - window.pageYOffset - document.documentElement.clientHeight) <= 50
+    var isbottom = Math.abs(document.documentElement.scrollHeight - window.pageYOffset - document.documentElement.clientHeight) <= 200
 
     if (isbottom) {
       go_down.style.display = "none"
