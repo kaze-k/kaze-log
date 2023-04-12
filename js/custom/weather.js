@@ -1,6 +1,7 @@
 WIDGET = {
   CONFIG: {
-    modules: '01234',
+    // modules: '01234',
+    modules: '0124',
     background: '5',
     tmpColor: 'eee',
     tmpSize: '16',
@@ -10,7 +11,7 @@ WIDGET = {
     aqiSize: '16',
     weatherIconSize: '24',
     alertIconSize: '18',
-    padding: '3px 10px 3px 10px',
+    padding: '3px 3px 3px 3px',
     shadow: '1',
     language: 'auto',
     borderRadius: '20',
