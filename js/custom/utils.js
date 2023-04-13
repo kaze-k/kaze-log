@@ -1,14 +1,1 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const hide_down = () => {
-    var go_down = document.querySelector('#go-down')
-    var isbottom = Math.abs(document.documentElement.scrollHeight - window.pageYOffset - document.documentElement.clientHeight) <= 200
-
-    if (isbottom) {
-      go_down.style.display = "none"
-    } else {
-      go_down.style.display = "block"
-    }
-  }
-
-  window.addEventListener('scroll', hide_down)
-})
+document.addEventListener("DOMContentLoaded",function(){window.addEventListener("scroll",()=>{var e=document.querySelector("#go-down"),n=Math.abs(document.documentElement.scrollHeight-window.pageYOffset-document.documentElement.clientHeight)<=200;e.style.display=n?"none":"block"})});
