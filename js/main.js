@@ -619,7 +619,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('#sidebar-menus .site-page.group').forEach(function (item, _, arr) {
       item.addEventListener('click', function () {
         for(var i = 0; i < arr.length; i++) {
-          if (arr[i].className !== 'site-page group hide') arr[i].classList.add('hide')
+          if (arr[i].className !== 'site-page group hide' && arr[i] !== item) arr[i].classList.add('hide')
         }
         this.classList.toggle('hide');
       });
