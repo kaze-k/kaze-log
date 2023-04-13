@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){window.addEventListener("scroll",()=>{var e=document.querySelector("#go-down"),n=Math.abs(document.documentElement.scrollHeight-window.pageYOffset-document.documentElement.clientHeight)<=200;e.style.display=n?"none":"block"})});
+document.addEventListener("DOMContentLoaded",(function(){window.addEventListener("scroll",(()=>{var e=document.querySelector("#go-down"),n=Math.abs(document.documentElement.scrollHeight-window.pageYOffset-document.documentElement.clientHeight)<=200;e.style.display=n?"none":"block"}))}));
