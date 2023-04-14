@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kaze-k.github.io/kaze-log/posts/21725/</loc>
+    
+    <lastmod>2023-04-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kaze-k.github.io/kaze-log/posts/19711/</loc>
     
     <lastmod>2023-04-14</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://kaze-k.github.io/kaze-log/posts/33510/</loc>
-    
-    <lastmod>2023-04-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kaze-k.github.io/kaze-log/posts/21725/</loc>
     
     <lastmod>2023-04-07</lastmod>
     
@@ -108,14 +108,14 @@
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/Arch-Linux/</loc>
     <lastmod>2023-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://kaze-k.github.io/kaze-log/tags/Arch-Linux/</loc>
+    <loc>https://kaze-k.github.io/kaze-log/tags/Linux/</loc>
     <lastmod>2023-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
