@@ -70,9 +70,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Arch Linux </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -97,9 +97,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Arch Linux </tag>
+            
+            <tag> Linux </tag>
             
             <tag> Windows </tag>
             
@@ -203,9 +203,9 @@
       
         <tags>
             
-            <tag> Linux </tag>
-            
             <tag> Arch Linux </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -217,9 +217,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/kaze-log/categories/index.html"/>
-      <url>/kaze-log/categories/index.html</url>
+      <title>标签</title>
+      <link href="/kaze-log/tags/index.html"/>
+      <url>/kaze-log/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -228,9 +228,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/kaze-log/tags/index.html"/>
-      <url>/kaze-log/tags/index.html</url>
+      <title>分类</title>
+      <link href="/kaze-log/categories/index.html"/>
+      <url>/kaze-log/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
