@@ -126,9 +126,9 @@
     <category term="系统" scheme="https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Linux/"/>
-    
     <category term="Arch Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Linux/"/>
     
   </entry>
   
@@ -157,13 +157,13 @@
     <category term="系统" scheme="https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/"/>
     
     
+    <category term="Arch Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Arch-Linux/"/>
+    
     <category term="Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Linux/"/>
     
     <category term="Windows" scheme="https://kaze-k.github.io/kaze-log/tags/Windows/"/>
     
     <category term="双系统" scheme="https://kaze-k.github.io/kaze-log/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/"/>
-    
-    <category term="Arch Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Arch-Linux/"/>
     
   </entry>
   
@@ -282,9 +282,9 @@
     <category term="系统" scheme="https://kaze-k.github.io/kaze-log/categories/%E7%B3%BB%E7%BB%9F/"/>
     
     
-    <category term="Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Linux/"/>
-    
     <category term="Arch Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Arch-Linux/"/>
+    
+    <category term="Linux" scheme="https://kaze-k.github.io/kaze-log/tags/Linux/"/>
     
   </entry>
   
