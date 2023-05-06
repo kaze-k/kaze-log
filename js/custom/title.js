@@ -1,1 +1,37 @@
-const ErrorIcon=document.location.origin+"/img/error.png";let OriginIcon,titleTime,OriginTitle=document.title,links=document.querySelectorAll("link");for(let e=0;e<links.length;e++)"shortcut icon"===links[e].rel&&(OriginIcon=links[e].href);document.addEventListener("visibilitychange",(()=>{if(document.hidden){let e=document.querySelectorAll("link");for(let t=0;t<e.length;t++)"shortcut icon"===e[t].rel&&(e[t].href=ErrorIcon),document.title="页面失踪了 X_X",clearTimeout(titleTime)}else{let e=document.querySelectorAll("link");for(let t=0;t<e.length;t++)"shortcut icon"===e[t].rel&&(e[t].href=OriginIcon);document.title=OriginIcon===ErrorIcon?"X_X":">‿ㅇ",titleTime=setTimeout((function(){document.title=OriginTitle}),1e3)}}));
+const ErrorIcon = document.location.origin + '/img/error.png';
+let OriginTitle = document.title;
+let OriginIcon;
+let titleTime;
+
+let links = document.querySelectorAll('link');
+for (let i = 0; i < links.length; i++) {
+  if (links[i].rel === 'shortcut icon') {
+    OriginIcon = links[i].href;
+  }
+}
+
+document.addEventListener('visibilitychange', () => {
+  if (document.hidden) {
+    let links = document.querySelectorAll('link');
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].rel === 'shortcut icon') {
+        // links[i].setAttribute('href', '/img/error.png');
+        links[i].href = ErrorIcon;
+      }
+      document.title = '页面失踪了 X_X';
+      clearTimeout(titleTime);
+    }
+  } else {
+    let links = document.querySelectorAll('link');
+    for (let i = 0; i < links.length; i++) {
+      if (links[i].rel === 'shortcut icon') {
+        // links[i].setAttribute('href', '/img/favicon.png');
+        links[i].href = OriginIcon;
+      }
+    }
+    document.title = OriginIcon === ErrorIcon ? 'X_X' : '>‿ㅇ';
+    titleTime = setTimeout(function () {
+      document.title = OriginTitle;
+    }, 1000);
+  }
+});

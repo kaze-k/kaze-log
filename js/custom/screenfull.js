@@ -1,1 +1,165 @@
-const methodMap=[["requestFullscreen","exitFullscreen","fullscreenElement","fullscreenEnabled","fullscreenchange","fullscreenerror"],["webkitRequestFullscreen","webkitExitFullscreen","webkitFullscreenElement","webkitFullscreenEnabled","webkitfullscreenchange","webkitfullscreenerror"],["webkitRequestFullScreen","webkitCancelFullScreen","webkitCurrentFullScreenElement","webkitCancelFullScreen","webkitfullscreenchange","webkitfullscreenerror"],["mozRequestFullScreen","mozCancelFullScreen","mozFullScreenElement","mozFullScreenEnabled","mozfullscreenchange","mozfullscreenerror"],["msRequestFullscreen","msExitFullscreen","msFullscreenElement","msFullscreenEnabled","MSFullscreenChange","MSFullscreenError"]],nativeAPI=(()=>{if("undefined"==typeof document)return!1;const e=methodMap[0],n={};for(const l of methodMap){const r=l?.[1];if(r in document){for(const[r,c]of l.entries())n[e[r]]=c;return n}}return!1})(),eventNameMap={change:nativeAPI.fullscreenchange,error:nativeAPI.fullscreenerror};let screenfull={request:(e=document.documentElement,n)=>new Promise(((l,r)=>{const c=()=>{screenfull.off("change",c),l()};screenfull.on("change",c);const t=e[nativeAPI.requestFullscreen](n);t instanceof Promise&&t.then(c).catch(r)})),exit:()=>new Promise(((e,n)=>{if(!screenfull.isFullscreen)return void e();const l=()=>{screenfull.off("change",l),e()};screenfull.on("change",l);const r=document[nativeAPI.exitFullscreen]();r instanceof Promise&&r.then(l).catch(n)})),toggle:(e,n)=>screenfull.isFullscreen?screenfull.exit():screenfull.request(e,n),onchange(e){screenfull.on("change",e)},onerror(e){screenfull.on("error",e)},on(e,n){const l=eventNameMap[e];l&&document.addEventListener(l,n,!1)},off(e,n){const l=eventNameMap[e];l&&document.removeEventListener(l,n,!1)},raw:nativeAPI};Object.defineProperties(screenfull,{isFullscreen:{get:()=>Boolean(document[nativeAPI.fullscreenElement])},element:{enumerable:!0,get:()=>document[nativeAPI.fullscreenElement]??void 0},isEnabled:{enumerable:!0,get:()=>Boolean(document[nativeAPI.fullscreenEnabled])}}),nativeAPI||(screenfull={isEnabled:!1}),document.getElementById("screenfull-button").addEventListener("click",(function(){screenfull.isEnabled&&screenfull.toggle(),screenfull.isFullscreen?document.querySelector(".screenfull").querySelector("i").classList.replace("fa-compress","fa-expand"):document.querySelector(".screenfull").querySelector("i").classList.replace("fa-expand","fa-compress")}));
+const methodMap = [
+  [
+    'requestFullscreen',
+    'exitFullscreen',
+    'fullscreenElement',
+    'fullscreenEnabled',
+    'fullscreenchange',
+    'fullscreenerror',
+  ],
+  // New WebKit
+  [
+    'webkitRequestFullscreen',
+    'webkitExitFullscreen',
+    'webkitFullscreenElement',
+    'webkitFullscreenEnabled',
+    'webkitfullscreenchange',
+    'webkitfullscreenerror',
+  ],
+  // Old WebKit
+  [
+    'webkitRequestFullScreen',
+    'webkitCancelFullScreen',
+    'webkitCurrentFullScreenElement',
+    'webkitCancelFullScreen',
+    'webkitfullscreenchange',
+    'webkitfullscreenerror',
+  ],
+  [
+    'mozRequestFullScreen',
+    'mozCancelFullScreen',
+    'mozFullScreenElement',
+    'mozFullScreenEnabled',
+    'mozfullscreenchange',
+    'mozfullscreenerror',
+  ],
+  [
+    'msRequestFullscreen',
+    'msExitFullscreen',
+    'msFullscreenElement',
+    'msFullscreenEnabled',
+    'MSFullscreenChange',
+    'MSFullscreenError',
+  ],
+];
+
+const nativeAPI = (() => {
+  if (typeof document === 'undefined') {
+    return false;
+  }
+
+  const unprefixedMethods = methodMap[0];
+  const returnValue = {};
+
+  for (const methodList of methodMap) {
+    const exitFullscreenMethod = methodList?.[1];
+    if (exitFullscreenMethod in document) {
+      for (const [index, method] of methodList.entries()) {
+        returnValue[unprefixedMethods[index]] = method;
+      }
+
+      return returnValue;
+    }
+  }
+
+  return false;
+})();
+
+const eventNameMap = {
+  change: nativeAPI.fullscreenchange,
+  error: nativeAPI.fullscreenerror,
+};
+
+let screenfull = {
+  // eslint-disable-next-line default-param-last
+  request(element = document.documentElement, options) {
+    return new Promise((resolve, reject) => {
+      const onFullScreenEntered = () => {
+        screenfull.off('change', onFullScreenEntered);
+        resolve();
+      };
+
+      screenfull.on('change', onFullScreenEntered);
+
+      const returnPromise = element[nativeAPI.requestFullscreen](options);
+
+      if (returnPromise instanceof Promise) {
+        returnPromise.then(onFullScreenEntered).catch(reject);
+      }
+    });
+  },
+  exit() {
+    return new Promise((resolve, reject) => {
+      if (!screenfull.isFullscreen) {
+        resolve();
+        return;
+      }
+
+      const onFullScreenExit = () => {
+        screenfull.off('change', onFullScreenExit);
+        resolve();
+      };
+
+      screenfull.on('change', onFullScreenExit);
+
+      const returnPromise = document[nativeAPI.exitFullscreen]();
+
+      if (returnPromise instanceof Promise) {
+        returnPromise.then(onFullScreenExit).catch(reject);
+      }
+    });
+  },
+  toggle(element, options) {
+    return screenfull.isFullscreen ? screenfull.exit() : screenfull.request(element, options);
+  },
+  onchange(callback) {
+    screenfull.on('change', callback);
+  },
+  onerror(callback) {
+    screenfull.on('error', callback);
+  },
+  on(event, callback) {
+    const eventName = eventNameMap[event];
+    if (eventName) {
+      document.addEventListener(eventName, callback, false);
+    }
+  },
+  off(event, callback) {
+    const eventName = eventNameMap[event];
+    if (eventName) {
+      document.removeEventListener(eventName, callback, false);
+    }
+  },
+  raw: nativeAPI,
+};
+
+Object.defineProperties(screenfull, {
+  isFullscreen: {
+    get: () => Boolean(document[nativeAPI.fullscreenElement]),
+  },
+  element: {
+    enumerable: true,
+    get: () => document[nativeAPI.fullscreenElement] ?? undefined,
+  },
+  isEnabled: {
+    enumerable: true,
+    // Coerce to boolean in case of old WebKit.
+    get: () => Boolean(document[nativeAPI.fullscreenEnabled]),
+  },
+});
+
+if (!nativeAPI) {
+  screenfull = { isEnabled: false };
+}
+
+// 切换图标
+document.getElementById('screenfull-button').addEventListener('click', function () {
+  if (screenfull.isEnabled) {
+    screenfull.toggle();
+  }
+  if (screenfull.isFullscreen) {
+    document.querySelector('.screenfull').querySelector('i').classList.replace('fa-compress', 'fa-expand');
+  } else {
+    document.querySelector('.screenfull').querySelector('i').classList.replace('fa-expand', 'fa-compress');
+  }
+});
