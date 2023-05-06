@@ -124,11 +124,11 @@
             
             <tag> Linux </tag>
             
-            <tag> Arch Linux </tag>
-            
             <tag> Windows </tag>
             
             <tag> 双系统 </tag>
+            
+            <tag> Arch Linux </tag>
             
         </tags>
       
@@ -242,9 +242,9 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -253,9 +253,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
