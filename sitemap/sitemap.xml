@@ -124,20 +124,6 @@
   </url>
   
   <url>
-    <loc>https://blog.kazor.top/tags/Arch-Linux/</loc>
-    <lastmod>2023-05-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.kazor.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
-    <lastmod>2023-05-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.kazor.top/tags/Windows/</loc>
     <lastmod>2023-05-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -152,7 +138,14 @@
   </url>
   
   <url>
-    <loc>https://blog.kazor.top/tags/Javascript/</loc>
+    <loc>https://blog.kazor.top/tags/Arch-Linux/</loc>
+    <lastmod>2023-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.kazor.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</loc>
     <lastmod>2023-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
