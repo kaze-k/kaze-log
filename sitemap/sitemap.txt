@@ -12,11 +12,11 @@ https://blog.kazor.top/posts/33107/
 https://blog.kazor.top/
 https://blog.kazor.top/tags/JavaScript/
 https://blog.kazor.top/tags/Linux/
+https://blog.kazor.top/tags/Arch-Linux/
 https://blog.kazor.top/tags/Windows/
 https://blog.kazor.top/tags/%E5%8F%8C%E7%B3%BB%E7%BB%9F/
-https://blog.kazor.top/tags/Arch-Linux/
 https://blog.kazor.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/
 https://blog.kazor.top/categories/%E5%B7%A5%E5%85%B7/
 https://blog.kazor.top/categories/%E7%B3%BB%E7%BB%9F/
-https://blog.kazor.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
 https://blog.kazor.top/categories/%E5%89%8D%E7%AB%AF/
+https://blog.kazor.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/
